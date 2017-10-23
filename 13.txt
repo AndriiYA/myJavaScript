@@ -1,0 +1,15 @@
+//Дан массив. Найдите два соседних элемента, сумма которых минимальна.
+var array = [2,3,4,0,6,7,1,9];
+var sum = 0;
+var tmp = array[0] + array [1];
+
+for (var i = 2; i<array.length; i++){
+if (i % 2 === 0){
+sum = array [i] + array[i + 1];
+}
+if (tmp < sum){
+
+}else (tmp = sum)
+
+}
+console.log(tmp);
