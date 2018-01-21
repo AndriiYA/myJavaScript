@@ -1,0 +1,11 @@
+/* Определение времени суток. */ var date = new Date(),
+  hours = date.getHours();
+if (hours < 12 && hours > 5) {
+  console.log ('C добрым утром!');
+} else if (hours >= 12 && hours < 17) {
+  console.log('Добрый день!');
+} else if (hours >= 17 && hours < 22) {
+  console.log('Добрый вечер!');
+} else {
+  console.log('Доброй ночи!');
+}

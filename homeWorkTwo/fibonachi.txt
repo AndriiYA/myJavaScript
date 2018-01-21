@@ -1,0 +1,16 @@
+/* 4. -//- нахождения n-го числа Фибоначчи */
+
+function fibonachi(arrayLength) {
+		var arr = [];
+        arr.length = arrayLength;
+		arr[0] = 1;
+		arr[1] = 1;
+        //console.log(arr[0]);
+		//console.log(arr[1]);
+		for (var i = 2; i < arr.length; i++) {
+			arr[i] = arr[i - 1] + arr[i - 2];
+			//console.log(arr[i]);
+		}return arr[arr.length - 1];
+	}
+
+fibonachi(40);

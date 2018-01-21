@@ -1,0 +1,16 @@
+/*5. -//- написать функцию обратного вызова. Например
+https://github.com/rmsadik/x/blob/master/Javascript/stoyan-stefanov-javascript-patterns.pdf стр 62
+var a = {
+	fn: function ..etc..
+}
+*/
+var starCount = 0;
+shotBoom = function (collBack){
+starCount = starCount+1;
+console.log("Выстрел");
+collBack();
+};
+setTimeout(f(), 1000);
+function f (){ 
+shotBoom(function f(){console.log("На счету " + starCount + " звезд");})
+};

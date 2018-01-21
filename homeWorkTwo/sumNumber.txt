@@ -1,0 +1,13 @@
+/* -//- которая принимает переменное число числовых аргументов и возвращает результат - их сумму.
+*/
+function sayHi() {
+var tmp = 0;
+  for (var i = 0; i < arguments.length; i++) {
+if (typeof (arguments[i]) === "string"){
+return "vvedite chislo!!!";
+}
+tmp = tmp + arguments[i];
+  }return tmp; 
+}
+
+sayHi(2, 4, 5, 6);

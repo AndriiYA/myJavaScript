@@ -1,0 +1,18 @@
+/*
+Есть объект salaries с зарплатами. Напишите код, который выведет сумму всех зарплат.
+Если объект пустой, то результат должен быть 0.
+*/
+var salaries = {
+  //"Вася": 100,
+  //"Петя": 300,
+  //"Даша": 250
+};
+
+function sumSalary (ob){
+var salary = 0;
+for (var key in ob){
+salary += ob[key]
+}return salary;
+}
+
+sumSalary(salaries);

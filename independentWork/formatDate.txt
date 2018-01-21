@@ -1,0 +1,12 @@
+/* 1. Написать программу, которая выводит сегодняшнее число в формате ДД.ММ.ГГГГ */ function formatDate(date) {
+  var day = date.getDate();
+  var month = date.getMonth() + 1;
+  var year = date.getFullYear();
+  return dta(day) + '.' + dta(month) + '.' + dta(year);
+}
+var full = new Date(); 
+console.log(formatDate(full));
+function dta (X){
+ if (X < 10) X = "0" + X;
+return X;
+}

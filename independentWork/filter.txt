@@ -1,0 +1,19 @@
+/* 3. Написать функцию-фильтр, которая принимает предикат и массив и возвращает новый массив, удовлетворяющий предикату
+var filteredItems = filter([1,3,4], (item, index, array) => {
+  return item % 2 === 0 || index === 1;
+}); // [3, 4] */ var filter = function(array = [], callback = () => true) {
+  const resultArray = [];
+  const arrayCopy = array.slice();
+  for (let i = 0; i < arrayCopy.length; i++) {
+    const item = arrayCopy[i];
+    if (callback(item, i, arrayCopy)) {
+      resultArray.push(item)
+    }
+  }
+  return resultArray;
+}
+
+var filteredItems = filter([1,3,4], (item, index, array) => {
+  return item % 2 === 0 || index === 1;
+}); 
+console.log(filteredItems);

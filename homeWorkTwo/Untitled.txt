@@ -1,0 +1,18 @@
+switch ("volume") {
+  case "on":
+  console.log("TV - start");
+  break;  
+  case "of":
+    console.log("TV - Off");
+    break;
+  case "volume":
+   var vol =+ prompt("volumeMax", 100);
+   if (vol >= 80){
+   console.log("MAX - Very Loud");
+   }else if (vol < 80){
+  console.log("Volum normal")
+  }
+  break;
+  default:
+  alert( 'Я таких значений не знаю' );
+  }

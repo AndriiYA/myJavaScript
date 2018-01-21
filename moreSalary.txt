@@ -1,0 +1,21 @@
+/*Есть объект salaries с зарплатами. Напишите код, который выведет имя сотрудника, у которого самая большая зарплата.
+Если объект пустой, то пусть он выводит «нет сотрудников».
+*/
+var salaries = {
+  "Вася": 100,
+  "Петя": 300,
+  "Даша": 250
+};
+
+function bigestSalary (ob){
+var bigest = 0;
+var name = "";
+for(var name in ob){
+if (bigest < ob[name]){
+bigest = ob[name];
+var user = name; 
+}
+}
+return (user + " : "+ bigest);
+}
+bigestSalary(salaries);

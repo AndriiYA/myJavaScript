@@ -1,0 +1,17 @@
+/*
+4. Написать функцию, которая принимает 2 массива и возвращает новый массив, состоящий из общих элементов
+var intersectedItems = intercect([1,2,3,4], [2,6]) //[2]
+*/
+
+var a = [1,2,3,4];
+var m = [2,6,1];
+function twoMas (array, mas){
+var tmp = [];
+for (x = 0; x<array.length; x++){
+if (mas.indexOf(array[x]) > -1){
+tmp.push(array[x]);
+}
+}
+return tmp;
+}
+twoMas(a, m); 
